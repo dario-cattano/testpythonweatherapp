@@ -44,4 +44,4 @@ def home():
 
 # This starts the server
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
