@@ -1,0 +1,9 @@
+# Ignore PyInstaller artifacts
+dist/
+build/
+*.spec
+
+# Ignore Python caches and local files
+*.exe
+*.json
+__pycache__/

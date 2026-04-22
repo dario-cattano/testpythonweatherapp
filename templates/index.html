@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Web Weather</title>
+</head>
+<body>
+    <h1>Check the Weather</h1>
+    
+    <form method="POST">
+        <input type="text" name="city" placeholder="Enter a city name" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <hr>
+
+    {% if error %}
+        <p style="color: red;"><strong>{{ error }}</strong></p>
+    {% endif %}
+
+    {% if temp %}
+        <h2>Weather in {{ city_name }}</h2>
+        <p>Temperature: {{ temp }}°C</p>
+        <p>Wind Speed: {{ wind }} km/h</p>
+    {% endif %}
+
+</body>
+</html>
