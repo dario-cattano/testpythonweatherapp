@@ -27,7 +27,7 @@ def home():
     past_searches = SearchHistory.query.all()
 
     if request.method == "POST":
-        city = request.form.get("city")
+        city = request.form.get("city").strip()
         
         # --- 4. WRITE TO DATABASE ---
         # Spawn a new Object and save it to the database
@@ -70,4 +70,4 @@ def home():
     return render_template("index.html", history=past_searches)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
