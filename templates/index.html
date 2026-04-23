@@ -22,6 +22,16 @@
         <p>Temperature: {{ temp }}°C</p>
         <p>Wind Speed: {{ wind }} km/h</p>
     {% endif %}
-
+    
+    <hr>
+    
+    <h3>Recent Searches</h3>
+    <ul>
+        {% for search in history %}
+            <li>{{ search.city_name }}</li>
+        {% else %}
+            <li>No searches yet!</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>

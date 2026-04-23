@@ -7,3 +7,9 @@ build/
 *.exe
 *.json
 __pycache__/
+
+# Ignore Flask instance folder and databases
+instance/
+*.db
+*.sqlite
+*.sqlite3
