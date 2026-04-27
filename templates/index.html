@@ -2,8 +2,10 @@
 <html>
 <head>
     <title>Python Web Weather</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div class="card">
     <h1>Check the Weather</h1>
     
     <form method="POST">
@@ -32,6 +34,6 @@
         {% else %}
             <li>No searches yet!</li>
         {% endfor %}
-    </ul>
+    </ul> </div>
 </body>
 </html>

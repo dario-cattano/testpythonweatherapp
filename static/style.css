@@ -1,0 +1,57 @@
+/* 1. Base Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* A soft off-white/gray */
+    color: #333333;            /* Dark gray text, easier on the eyes than pure black */
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* 2. Form & Inputs */
+input[type="text"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounds the corners */
+    width: 250px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007BFF; /* A nice modern blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Changes the button color slightly when you hover over it */
+button:hover {
+    background-color: #0056b3; 
+}
+
+/* 3. The Search History List */
+ul {
+    list-style-type: none; /* Removes the ugly default bullet points */
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff;
+    margin: 5px auto;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds a subtle drop shadow */
+}
+/* The Card Container */
+.card {
+    background-color: white;
+    max-width: 500px; /* Prevents the card from getting too wide */
+    margin: 0 auto;   /* The magic trick that centers the box horizontally! */
+    padding: 30px;    /* Breathing room inside the box */
+    border-radius: 12px; /* Smooth rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* A soft shadow behind the card */
+}
